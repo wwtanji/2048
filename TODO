@@ -1,0 +1,6 @@
+- [x] Grid rendering
+- [x] Tile movement & merging
+- [x] Input handling
+- [x] Tile animations
+- [x] Game over detection
+- [ ] Score system (optional)

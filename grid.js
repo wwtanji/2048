@@ -12,4 +12,10 @@ export class Grid {
             );
         }
     }
+
+  getRandomEmptyCell() {
+    const emptyCells = this.cells.filter(cell => cell.isEmpty());
+    const randomIndex = Math.floor(Math.random() * emptyCells.length);
+    return emptyCells[randomIndex];
+  }
 }

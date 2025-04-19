@@ -54,3 +54,51 @@ body {
         transform: scale(0);
     }
 }
+
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 3vmin 5vmin;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    font-family: Arial, sans-serif;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    text-align: center;
+}
+
+#game-over-message.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: all;
+}
+
+#game-over-message p {
+    margin-bottom: 2vmin;
+}
+
+#restart-button {
+    padding: 1vmin 3vmin;
+    font-size: 2vmin;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 0.5vmin;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #dddddd;
+}
+
+.hidden {
+    display: none;
+}
